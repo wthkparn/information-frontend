@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://information-frontend.onrender.com";
 
 let mod = "CREATE"; // defaull
 let selectedID = "";
