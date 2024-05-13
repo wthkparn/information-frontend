@@ -42,18 +42,28 @@ p{
     border: 1px solid rgb(202, 202, 202);
     background-color: rgb(115, 255, 255);
     display: flex;
-    justify-content: space-between ;
-    align-items: center;
+    flex-direction: column;
     margin: 20px 0;
     padding: 20px;
-
-}
-
-.name {
-    display: flex;
-    gap: 20px;
     font-size: 18px;
 }
+
+.itemone {
+    display: flex;
+    gap:20px ;
+}
+
+.name{
+    display: flex;
+    gap: 20px;
+}
+
+
+.itemtwo{
+    display: flex;
+    gap: 20px;
+}
+
 
 .button{
     display: flex;
