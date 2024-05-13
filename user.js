@@ -14,21 +14,37 @@ const londdata = async () => {
 
   // ดึง  data เข้า  html
  
-  let htmlData = "<dev>";
+ let htmlData = "<dev>";
   for (let i = 0; i < response.data.length; i++) {
     let user = response.data[i];
 
     htmlData += `<div class = 'items'>
-        <div class = 'name'>
-        <div class = fname>${user.firstname}</div>
+        <div class = 'itemone'>
+        <div class = fname>ชื่อ: ${user.firstname}</div>
         <div class = lname>${user.lasrname} </div>
         </div>
+
+        <div class = 'itemtwo'>
+          <div class = 'age'>อายุ: ${user.age}</div>
+          <div class = 'gender'>เพศ: ${user.gender}</div>
+        </div>
+
+        <div class = 'itemthree'>
+         <div class = 'interest'>สิ่งที่สนใจ: ${user.interests}</div>
+         </div>
+
+         <div class = 'itemfour'>
+          คำอธิบายเกี่ยวกับฉัน
+         <div class = 'description'> ${user.description}</div>
+         </div>
+        </div>
+
+      
         <div class = 'button'>
         <a href = 'index.html?id=${user.id}'><button>แก้ไข</button></a>
         <button class = 'delete' data-id = ${user.id}>ลบ</button>
         </div>
         </div>
-        
         `;
   }
 
